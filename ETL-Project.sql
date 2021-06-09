@@ -6,8 +6,10 @@ CREATE TABLE "UFO_Sightings" (
     "State" VARCHAR(2)   NOT NULL,
     "Lat" FLOAT   NOT NULL,
     "Long" FLOAT   NOT NULL,
-    "Closest_airport" VARCHAR(30)   NOT NULL,
-    "Closest_bases" VARCHAR(30)   NOT NULL,
+    "Closest_airport" VARCHAR(60)   NOT NULL,
+	"Closest_airport_address" VARCHAR(60) NOT NULL,
+    "Closest_military_base" VARCHAR(60)   NOT NULL,
+	"Closest_military_base_address" VARCHAR(60) NOT NULL, 
     CONSTRAINT "pk_UFO_Sightings" PRIMARY KEY (
         "Index"
      )
