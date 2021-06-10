@@ -74,31 +74,7 @@ ALTER TABLE public.us_airports ADD COLUMN airports_id SERIAL PRIMARY KEY;
 SELECT *
 FROM public.us_airports;
 
-CREATE TABLE public.ufo_airports
-(
-    "Date" text COLLATE pg_catalog."default",
-    "Shape" text COLLATE pg_catalog."default",
-    "Location" text COLLATE pg_catalog."default",
-    "State" text COLLATE pg_catalog."default",
-    "Country" text COLLATE pg_catalog."default",
-    "Lat" double precision,
-    "Lng" double precision,
-    "Closest Airport" text COLLATE pg_catalog."default",
-    "Closest Airport Address" text COLLATE pg_catalog."default",
-    "Closest Military Base" text COLLATE pg_catalog."default",
-    "Closest Military Base Address" text COLLATE pg_catalog."default"
-)
-WITH (
-    OIDS = FALSE
-)
-TABLESPACE pg_default;
 
-ALTER TABLE public.ufo_airports
-    OWNER to postgres;
-ALTER TABLE public.ufo_airports ADD COLUMN ufo_id SERIAL PRIMARY KEY;
-
-SELECT *
-FROM public.ufo_airports;
 
 CREATE TABLE public.fireball
 (
